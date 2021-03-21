@@ -1,26 +1,26 @@
-/*
-Treehouse Techdegree:
-FSJS Project 2 - Data Pagination and Filtering
-Tamika Hayes, March 19, 2021
+/** 
+*Treehouse Techdegree:
+*FSJS Project 2 - Data Pagination and Filtering
+*Tamika Hayes, March 19, 2021
 */
 
 
 
-/*
-This app uses vanilla JavaScript to dynamically generate the markup for a student list
- and pagination buttons within a generic student directory. It has two primary functions,
- 'showPage' and 'addPagination.' The default number of students displayed per page is 9, 
- and the sample data file contains an array of 42 student 'objects.' The app is flexible 
- enough to accept student data files of varying sizes.
+/** 
+*This app uses vanilla JavaScript to dynamically generate the markup for a student list
+*and pagination buttons within a generic student directory. It has two primary functions,
+*'showPage' and 'addPagination.' The default number of students displayed per page is 9, 
+*and the sample data file contains an array of 42 student 'objects.' The app is flexible 
+*enough to accept student data files of varying sizes.
 */
 
 
 'use strict';
 
 const perPage = 9;
-/*
-The `showPage` function:
-This function will create and insert/append the elements needed to display a "page" of nine students
+/** 
+*The `showPage` function:
+*This function will create and insert/append the elements needed to display a "page" of nine students
 */
  
 function showPage(list, page) {
@@ -58,8 +58,8 @@ function showPage(list, page) {
 
 
 /*
-The `addPagination` function:
-This function will create and insert/append the elements needed for the pagination buttons
+*The `addPagination` function:
+*This function will create and insert/append the elements needed for the pagination buttons
 */
 
 function addPagination(list) {
