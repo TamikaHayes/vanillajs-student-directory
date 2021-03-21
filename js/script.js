@@ -36,8 +36,9 @@ function showPage(list, page) {
       for (let i = 0; i < list.length; i += 1) {
          if ( i >= startIndex && i < endIndex) {
             let studentItem = list[i];
+            let html = '';
             
-            let html = `
+            html += `
                <li class="student-item cf">
                <div class="student-details">
                <img class="avatar" src="${studentItem.picture.large}" alt="Profile Picture">
@@ -50,8 +51,8 @@ function showPage(list, page) {
             </li>
             `;
             studentList.insertAdjacentHTML('beforeend', html);
-      }    
-    }
+         }    
+      }
 }
 
 showPage(data, 1);
