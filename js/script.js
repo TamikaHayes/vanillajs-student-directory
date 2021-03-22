@@ -115,7 +115,48 @@ function showSearchBar(list) {
    
 }
 
+showSearchBar(data);
+
+
+
+
+//console.log(input);
+//console.log(submitButton);
+//console.log(allStudents);
+
+// function nameSearch(searchInput, list) {
+//    const input = document.querySelector('#search');
+//    const submitButton = document.querySelector('button');
+//    const allStudents = document.querySelectorAll('arr');
+//    console.log(searchInput);
+//    console.log(list);
+// //loop through the list of all students
+// for (let i = 0; i < list.length; i += 1) {
+//    // remove any previous 'match' class names
+//    list[i].classList.remove('match');
+//       //if search input value is not empty AND the student list includes the search input value
+//       if (searchInput.value.length !== 0 && list[i].textContent.toLowerCase().includes(searchInput.value.toLowerCase())) {
+//       //add the class name 'match'
+//       list[i].classList.add('match');
+//    }
+// }
+// //filter the student list for the class name 'match,' and store the results in searchMatches
+// let searchMatches = list.filter(list => list.className === 'match');
+// return searchMatches;
+// }
+//    //console.log(searchMatches);
+//    //showPage(searchMatches);
+
+//    submitButton.addEventListener('click', (e) => {
+//    nameSearch(input, allStudents);
+//    console.log('Submit button is functional!');
+//    });
+
+//    input.addEventListener('keyup', () => {
+//    nameSearch(input, allStudents);
+//    console.log('Keyup event on the search input is functional!');
+//    });
+
 // Call functions
 showPage(data, 1);
 addPagination(data);
-showSearchBar(data);
